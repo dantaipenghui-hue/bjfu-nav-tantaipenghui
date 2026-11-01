@@ -49,7 +49,7 @@ cmake-build-*/
 Thumbs.db
 
 # task2 编译产物（无扩展名的可执行文件）
-/task2/hello world
+/task2/hello_world
 /task2/score_stats
 /task2/swap
 
