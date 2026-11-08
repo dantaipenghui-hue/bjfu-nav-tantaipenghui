@@ -39,17 +39,13 @@ bin/
 obj/
 cmake-build-*/
 
-# Editor / IDE
-.vscode/
+# Editor / IDE（保留调试配置，方便 clone 后直接 F5）
+.vscode/*
+!.vscode/launch.json
 .idea/
 *.swp
 
 # System files
 .DS_Store
 Thumbs.db
-
-# task2 编译产物（无扩展名的可执行文件）
-/task2/hello_world
-/task2/score_stats
-/task2/swap
 
