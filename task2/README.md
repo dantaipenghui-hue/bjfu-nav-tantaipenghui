@@ -30,8 +30,7 @@ task2/
 ├── .vscode/
 │   └── launch.json         # 三个程序的 gdb 调试配置
 └── screenshots/
-    ├── debug/              # 本次断点单步调试截图（01~15，按顺序）
-    └── legacy/             # 早期 g++ 单文件版本的代码/运行截图（留档）
+    └── debug/              # 断点单步调试截图（01~15，按顺序）
 ```
 
 ## 三、编译与运行（clone 后一次通过）
@@ -154,9 +153,3 @@ int main()
 | 断点是灰色空心圆 | 程序与源码不匹配：重新 `cmake --build build` 编译 |
 | `score_stats` 报「无法打开文件: scores.txt」 | 运行目录不对，在 `task2/` 下运行，或传 `../scores.txt` |
 | 断点不生效 | 确认 VS Code 打开的是 `task2` 目录，且 `launch.json` 里的路径正确 |
-
-## 附：早期截图
-
-`screenshots/legacy/` 保留了第一版用 `g++ 单文件` 方式编译时的代码与运行截图
-（`hello_world.png`、`score_stats_code.png`、`score_stats_run.png`、`swap_code.png`、`swap_run.png`），
-仅作历史留档；当前工程以 CMake 结构与第五节调试截图为准。
