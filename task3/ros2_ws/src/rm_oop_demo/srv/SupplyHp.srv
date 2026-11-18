@@ -1,0 +1,9 @@
+# 请求回血量
+uint16 amount
+---
+# 是否回血成功
+bool success
+# 回血后的当前血量
+uint16 current_hp
+# 结果说明
+string message
